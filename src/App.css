@@ -1,3 +1,14 @@
+.text {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  line-height: 4rem;
+  color: #333;
+}
+
+.mark {
+  color: blue;
+}
+
 .App {
   text-align: center;
 }
