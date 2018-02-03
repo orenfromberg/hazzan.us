@@ -1,15 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+
+* {
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
 .text {
-  font-family: 'Times New Roman', Times, serif;
   font-size: 3rem;
   line-height: 4rem;
   color: #333;
+  cursor: pointer;
+  direction: rtl;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
 }
 
 .mark {
-  color: blue;
+  color: rgb(0, 0, 255);
 }
 
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -36,4 +52,4 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
