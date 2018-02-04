@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import './style.scss';
+import './style.css';
 
 const parsePhrase = (phrase) => {
   let words = phrase.split(/\s+/);
   // https://unicodelookup.com/#hebrew/1
-  // merkha = 5a5
-  // tipeha = 596
-  // meteg = 5bd
-  // sof pasuk = 5c3
+//   const merkha = '\u{5a5}';
+//   const tipeha = '\u{596}';  
+//   const meteg = '\u{5bd}';  
+//   const sofPasuk = '\u{5c3}';
   let marks = /[\u{5a5}|\u{596}|\u{5bd}|\u{5c3}]/u;
   return words.map((word, index) => 
-    (<span>
+    (<span key={word + '_' + index}>
       <span className="word">
       {
-        word.split('').map((letter) => {
+        word.split('').map((letter, j) => {
           let type = marks.test(letter) ? 'mark' : 'letter';
-          return <span className={type}>{letter}</span>;
+          return <span key={j} className={type}>{letter}</span>;
         })
       }
       </span>
@@ -59,7 +59,7 @@ class Phrase extends Component {
   render() {
     return (
       <div>
-        <div className="text"
+        <div className={`text ${this.props.hidden?'hidden':''}`}
             onClick={this.toggleAudio}>
         {
           parsePhrase(this.props.phrase)

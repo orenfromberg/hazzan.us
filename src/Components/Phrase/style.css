@@ -1,0 +1,4 @@
+.text.hidden .word {
+    color: transparent;
+    outline: 1px solid black;
+}
