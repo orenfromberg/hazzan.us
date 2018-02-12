@@ -1,7 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre');
+@import url('https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500&subset=hebrew');
+@font-face {
+  font-family: 'Taamey Frank';
+  src: url('TaameyFrankCLM-Medium.ttf');
+}
+/* @import url('https://fonts.googleapis.com/css?family=Heebo&subset=hebrew');
+@import url('https://fonts.googleapis.com/css?family=David+Libre&subset=hebrew'); */
+@font-face {
+  /* https://www.sbl-site.org/educational/biblicalfonts_sblhebrew.aspx */
+  font-family: 'sbl-hebrew';
+  src: url('SBL_Hbrw.ttf');
+}
 
-* {
-  font-family: 'Frank Ruhl Libre', serif;
+ol {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 600px;
+  margin: 0 auto;
 }
 
 .text {
@@ -11,6 +26,11 @@
   cursor: pointer;
   direction: rtl;
   text-align: center;
+  /* font-family: 'David Libre'; */
+  /* font-family: sbl-hebrew; */
+  font-family: 'Frank Ruhl Libre', 'Taamey Frank', serif;
+  /* font-family: Heebo */
+  /* font-family: 'Frank Ruehl Libre', 'Taamey Frank', serif; */
 }
 
 audio {
@@ -22,7 +42,7 @@ h1 {
 }
 
 .mark {
-  color: rgb(0, 0, 255);
+  color: #00f;
 }
 
 /* .App {
