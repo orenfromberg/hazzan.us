@@ -59,6 +59,7 @@ class Phrase extends Component {
               }>
         {
           parsePhrase(this.props.phrase)
+          // this.props.phrase
         }
         </div>
         <audio

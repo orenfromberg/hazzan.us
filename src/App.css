@@ -11,6 +11,15 @@
   src: url('SBL_Hbrw.ttf');
 }
 
+* {
+    /* font-family: 'David Libre'; */
+  /* font-family: sbl-hebrew; */
+  /* font-family: 'Frank Ruhl Libre', 'Taamey Frank', serif;
+  font-weight: 400; */
+  /* font-family: Heebo */
+  /* font-family: 'Frank Ruehl Libre', 'Taamey Frank', serif; */
+}
+
 ol {
   text-align: center;
   font-size: 2rem;
@@ -26,11 +35,6 @@ ol {
   cursor: pointer;
   direction: rtl;
   text-align: center;
-  /* font-family: 'David Libre'; */
-  /* font-family: sbl-hebrew; */
-  font-family: 'Frank Ruhl Libre', 'Taamey Frank', serif;
-  /* font-family: Heebo */
-  /* font-family: 'Frank Ruehl Libre', 'Taamey Frank', serif; */
 }
 
 audio {
