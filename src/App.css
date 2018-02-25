@@ -3,6 +3,22 @@
   font-family: 'Taamey Frank';
   src: url('TaameyFrankCLM-Medium.ttf');
 }
+@font-face {
+  font-family: 'Shlomo';
+  src: url('./fonts/Shlomo/Shlomo.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Shlomo';
+  src: url('./fonts/Shlomo/ShlomoLightBold.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Shlomo';
+  src: url('./fonts/Shlomo/ShlomoBold.ttf');
+  font-weight: 600;
+}
+
 /* @import url('https://fonts.googleapis.com/css?family=Heebo&subset=hebrew');
 @import url('https://fonts.googleapis.com/css?family=David+Libre&subset=hebrew'); */
 @font-face {
@@ -20,33 +36,64 @@
   /* font-family: 'Frank Ruehl Libre', 'Taamey Frank', serif; */
 }
 
-ol {
+ol.tropes {
   text-align: center;
   font-size: 2rem;
   line-height: 3rem;
-  width: 600px;
+  /* width: 600px; */
   margin: 0 auto;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+.container {
+  margin: 1rem 1rem;
+}
+
+.word {
+  line-height: 6rem;
+  /* padding: 0 5px; */
 }
 
 .text {
   font-size: 3rem;
-  line-height: 4rem;
+  /* line-height: 4rem; */
   color: #333;
   cursor: pointer;
   direction: rtl;
   text-align: center;
+  /* font-family: 'Frank Ruhl Libre', 'Taamey Frank', serif; */
+  /* font-family: 'Frank Ruhl Libre', serif;
+  font-weight: 400; */
+  /* font-family: sbl-hebrew; */
+  font-family: 'Taamey Frank';
+  /* font-family: 'Shlomo'; */
+  /* font-weight: 400; */
 }
 
 audio {
-  width: 100%;
+  display: block;
+  width: 80%;
+  margin: 10px auto;
 }
 
-h1 {
+h1, h2, h3, h4, h5 {
   text-align: center;
+}
+
+button.text {
+  background: none;
+  border: none;
 }
 
 .mark {
   color: #00f;
+  /* font-family: sbl-hebrew; */
+  font-family: 'Taamey Frank';
+  /* font-family: 'Shlomo';
+  font-weight: 400; */
 }
 
 /* .App {

@@ -1,5 +1,6 @@
 .text.hidden .word {
     font-family: 'Taamey Frank';
     color: transparent;
+    border: 10px solid transparent;
     outline: 1px solid black;
 }
